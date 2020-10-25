@@ -1,0 +1,19 @@
+tienen que abrir una simbolo del sistema y entrar a la carpeta donde tienen el proyecto y ejecutar los siguientes comandos
+
+mysql -h localhost -u root -p
+create database tienda;
+use tienda;
+
+luego, en otro simbolo de sistema entrando a la carpeta del proyecto ejecutan estos otros comandos
+
+php artisan migrate:install
+php artisan migrate
+php artisan db:seed
+
+Con eso la BDD deberia estar lista para funcionar
+
+PD:Si mysql o PHP les toma como un comando invalido tienen que ubicarlos en PATH desde panel de control;sistema;configuracion avanzada de sistema;variables de entorno; y en el archivo path ubican la carpeta donde tienen el php o mysql.
+
+Si tienen dudas me preguntan.
+
+fuente:https://www.youtube.com/watch?v=cHW2gzlSRmw&list=PLyOvpEkXhCHXVMjWmn0BYymo4rkPLUxbu&index=3
