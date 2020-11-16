@@ -14,7 +14,8 @@
             <p>{{$producto->extract}}</p>
             <h3><span class="label label-success">Precio: ${{$producto->price}}</span></h3>
             <p>
-                <a class="btn btn-warning" href="#"><i class="fa fa-cart-plus"></i> Lo quiero</a>
+                <a class="btn btn-warning" href="{{ route("cart-add", $producto->slug)}}">
+                <i class="fa fa-cart-plus"></i> Lo quiero</a>
                 <a class="btn btn-primary" href="{{route("product-detail",$producto->slug)}}"><i class="fa fa-chevron-circle-right"></i> Leer mas</a>
             </p>
             </div>

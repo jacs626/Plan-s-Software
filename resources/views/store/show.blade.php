@@ -20,7 +20,7 @@
                     <p>{{$product->description}}</p>
                     <h3><span class="label label-success">Precio: ${{$product->price}}</span></h3>
                     <p>
-                        <a class="btn btn-warning btn-block" href="#">
+                        <a class="btn btn-warning btn-block" href="{{ route("cart-add", $product->slug)}}">
                             Lo quiero <i class="fa fa-cart-plus fa-1.5x"></i></a>
                     </p>
                 </div>
