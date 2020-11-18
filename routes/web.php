@@ -15,6 +15,9 @@ Route::bind('product',function($slug) {
     return App\Productos::where("slug",$slug)->first();
 });
 
+Route::bind('category',function($category) {
+    return App\Categorias::find($category);
+});
 
 Route::get('/', [
     "as"=>"home",
@@ -55,3 +58,11 @@ Route::get('cart/update/{product}/{quantity}',[
 
 Route::get("/login","ConnectController@getLogin");
 
+
+//admin----
+
+Route::get('admin/home', function () {
+    return view ("admin.home");
+});
+
+Route::resource('admin/category', "Admin\CategoryController");

@@ -1,0 +1,38 @@
+body
+{
+    background: rgb(156, 156, 156);
+}
+
+/* footer */
+
+footer
+{
+    background: crimson;
+}
+
+h1
+{
+    color: orange;
+}
+
+
+.page
+{
+    background: #ffffff;
+    border-radius: 1em;
+    margin: 1em;
+    min-height: 500px;
+    padding: 1em;
+}
+
+.icon-home
+{
+    color: #666;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.btn-home-admin
+{
+    font-size: 25px;
+}
