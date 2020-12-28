@@ -65,6 +65,16 @@ Route::get('admin/home', function () {
     return view ("admin.home");
 });
 
-Route::resource('admin/category', "Admin\CategoryController");
+Route::get('admin/home', [
+    "middleware"=>"auth",
+    "as"=>"admin-home",
+    "uses"=>"HomeController@index"
+]);
 
-Route::resource('admin/product', "Admin\ProductController");
+Route::resource('admin/category', "Admin\CategoryController",["middleware"=>"auth"]);
+
+Route::resource('admin/product', "Admin\ProductController",["middleware"=>"auth"]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
