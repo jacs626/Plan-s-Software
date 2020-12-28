@@ -1,7 +1,7 @@
 <footer class="container-fluid">
     <div class="row">
         <div class="col-md-4">
-            <h3>My laravel Store</h3>
+            <h3>Adela Costuras</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, impedit. Aspernatur vitae ipsa ad recusandae dignissimos. Voluptas quas sunt rerum.
             </p>
         </div>

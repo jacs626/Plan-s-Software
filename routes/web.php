@@ -66,3 +66,5 @@ Route::get('admin/home', function () {
 });
 
 Route::resource('admin/category', "Admin\CategoryController");
+
+Route::resource('admin/product', "Admin\ProductController");
