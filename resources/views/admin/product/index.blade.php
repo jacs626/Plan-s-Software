@@ -40,7 +40,13 @@
 										</button>
 									{!! Form::close() !!}
 								</td>
-								<td>{{ $product->category->name }}</td>
+								<td>
+									@if ( isset( $product->category->name) )
+										{{$product->category->name}}
+									@else
+										<p>Sin categoria</p>
+									@endif
+								</td>
 								<td>{{ $product->name }}</td>
 								<td>{{ $product->extract }}</td>
 								<td>${{ $product->price }}</td>
